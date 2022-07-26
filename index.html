@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="container main-navigation">
         <nav class="nav">
           <a href="./index.html" class="webstudio link"
@@ -59,7 +59,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn">Заказать услугу</button>
+          <button data-modal-open type="button" class="btn">Заказать услугу</button>
         </div>
       </section>
       <section class="features">
@@ -118,28 +118,37 @@
           <h2 class="doing-title">Чем мы занимаемся</h2>
           <ul class="doing-list list">
             <li class="doing-item">
-              <img
-                src="./images/main/about/computer.jpg"
-                alt="Разработка сайтов"
-                width="370"
-                height="294"
-              />
+              <div class="our-works-list-item-cover">
+                <img
+                  src="./images/main/about/computer.jpg"
+                  alt="Разработка сайтов"
+                  width="370"
+                  height="294"
+                />
+                <p class="our-works-list-item-cover-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="doing-item">
-              <img
-                src="./images/main/about/phone.jpg"
-                alt="Разработка приложений"
-                width="370"
-                height="294"
-              />
+              <div class="our-works-list-item-cover">
+                <img
+                  src="./images/main/about/phone.jpg"
+                  alt="Разработка приложений"
+                  width="370"
+                  height="294"
+                />
+                <p class="our-works-list-item-cover-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="doing-item">
-              <img
-                src="./images/main/about/tablet.jpg"
-                alt="Разработка дизайна"
-                width="370"
-                height="294"
-              />
+              <div class="our-works-list-item-cover">
+                <img
+                  src="./images/main/about/tablet.jpg"
+                  alt="Разработка дизайна"
+                  width="370"
+                  height="294"
+                />
+                <p class="our-works-list-item-cover-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,5 +438,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button"></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
