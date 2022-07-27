@@ -306,12 +306,6 @@ img {
 /* What we do */
 
 .doing {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-
-  color: var(--primary-text-color);
-
   padding-bottom: 94px;
 }
 
@@ -346,11 +340,9 @@ img {
   height: 70px;
   display: flex;
   justify-content: center;
-  padding: 27px 0;
+  align-items: center;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -441,7 +433,8 @@ img {
   color: var(--link-color);
   background-color: var(--main-color);
   border-radius: 50%;
-  transition: color 250ms var(--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function),
+    background-color 250ms var(--animation-timing-function);
 }
 
 .team-network-link:hover,
@@ -494,7 +487,8 @@ img {
   color: var(--link-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms var(--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function),
+    background-color 250ms var(--animation-timing-function);
 }
 
 .client-link:hover,
@@ -787,6 +781,7 @@ footer {
 .example-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--animation-timing-function);
 }
 
 .example-item {
